@@ -11,7 +11,7 @@ public interface IDoctorRepository extends JpaRepository<Doctor, Integer>{
 	public Iterable<Doctor> findByDocNameEndingWith(String lastChar);
 	public Iterable<Doctor> findByDocNameContaining(String chars);
 	public Iterable<Doctor> findByDocNameEqualsIgnoreCase(String name);
-//	public Iterable<Doctor> findByContainingIgnoreCase(String chars);
+	public Iterable<Doctor> findByDocNameContainingIgnoreCase(String chars);
 	public Iterable<Doctor> findByDocNameLike(String name);
 	
 }

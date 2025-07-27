@@ -38,8 +38,8 @@ public class FindXXXrunners implements CommandLineRunner {
 		
 		System.err.println("++++++++++++++++++++++++++++++++++++++++++++++++++");
 		
-//		StreamSupport.stream(docRepo.findByContainingIgnoreCase("uT").spliterator(), false)
-//							 .forEach(System.err::println);
+		StreamSupport.stream(docRepo.findByDocNameContainingIgnoreCase("uT").spliterator(), false)
+							 .forEach(System.err::println);
 		
 		System.err.println("++++++++++++++++++++++++++++++++++++++++++++++++++");
 		
