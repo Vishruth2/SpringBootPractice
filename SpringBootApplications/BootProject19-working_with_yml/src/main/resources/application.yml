@@ -1,0 +1,6 @@
+cust:
+  info:
+    cust-no: 1001
+    cust-name: Vishruth
+    cust-address: Hyderabad
+    bill-amount: 4500.26

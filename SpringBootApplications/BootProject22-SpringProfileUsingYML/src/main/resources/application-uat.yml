@@ -1,0 +1,10 @@
+spring:
+    datasource:
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        oracleucp:
+            initial-pool-size: 10
+            max-pool-size: 100
+        password: root
+        type: oracle.ucp.jdbc.PoolDataSource
+        url: jdbc:oracle:thin:@localhost:1522:orcl
+        username: system

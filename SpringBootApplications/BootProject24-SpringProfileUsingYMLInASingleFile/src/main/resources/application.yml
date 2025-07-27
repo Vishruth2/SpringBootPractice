@@ -1,0 +1,70 @@
+spring:
+  profiles:
+    active: uat
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  datasource:
+    type: org.apache.commons.dbcp2.BasicDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ntaj
+    username: root
+    password: root
+    dbcp2:
+      initial-size: 10
+      max-total: 100
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1522:orcl
+    username: system
+    password: root
+    hikari:
+      maximum-pool-size: 100
+      minimum-idle: 10
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: uat
+
+  datasource:
+    type: com.mchange.v2.c3p0.ComboPooledDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ntaj
+    username: root
+    password: root
+    c3p0:
+      max-size: 100
+      min-size: 10
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: oracle-ucp
+
+  datasource:
+    type: oracle.ucp.jdbc.PoolDataSource
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1522:orcl
+    username: system
+    password: root
+    oracleucp:
+      initial-pool-size: 10
+      max-pool-size: 100

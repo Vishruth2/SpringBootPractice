@@ -1,0 +1,85 @@
+Java Bean
+=========
+
+=> Java Bean is a java class that is developed by following some standards
+     a) class must be a public
+     b) Recommended to implement Serializable interface
+     c) Bean properties i.e (member variables) should be private and non-static.
+     d) Every Bean property should have 1 public setter and getter methods.
+     e) Should have 0-param constructor directly or indirectly.
+     
+ 3 types of Java Beans
+ ===================
+ 
+ 1) VO class (Value Object class) ---> To hold inputs or outputs.
+ 
+ 2) DTO class (Data Transfer Object class)  ---> To carry data from one layer to another layer
+ 																or from one project to another project.
+ 																
+ 3) BO class/Entity class/Model Class ---> To hold persistable / Persistance data.
+ 
+ *) Well Designed java class should contain
+     -> Overloaded constructor
+     -> toString() method
+     -> equals(-) method
+     -> hashCode() method
+     -> getters & setter methods (optional)
+     
+  Note:-
+  1) If equals() and hashcode() are not there in java class  keeping objects  of that java class 
+            will become very problematic as the elements of the collections.
+  
+  2) If toString() method is not there.. we can't print the object data in single shot as String using 
+             System.out.print() statement...
+             
+  3) Without setters and getters, setting data and reading to/from properties is very complex.
+  
+  
+  Before Lombok API
+  =================
+    => We should manual make java classes as well-designed classes by adding the above said methods
+         and we should manually increase or decrease getter and setter methods based on number of 
+         properties we are adding and removing.
+         
+ With Lombok API
+ ===============
+    => All the above things will be taken care and will be generated internally.
+    
+    => Lombok API is also called as Project Lombok generates following boilerplate of java class
+    	a) Constructors
+    	b) getters and setters
+    	c) toString()
+    	d) equals()
+    	e) hashcode etc..
+    
+     => It is an opensource api.
+     => It must be configure with IDE's to make IDEs using Lombok api to generate the common Boilerplate..
+     => It supplies bunch of annotations for generating this common code..
+     	 @Setter
+     	 @Getter
+     	 @AllArgsConstructor
+     	 @NoArgsConstructor
+     	 @RequiredArgsConstructors
+     	 @ToString
+     	 @Data (it is mixed of multiple annotations)
+     	 and etc..   
+     	 
+ Steps to Configure Lombok with Eclipse/STS IDE
+ ===========================================
+ 
+ Step-1 : Download lombok <ver>.jar file from mvnrepository.com
+ 
+ Step-2 : make sure Eclipse/STS IDE installed...
+                                To download STS :: https://spring.io/tools
+                                                                 |-> gives the jar files ===> run it(double click)
+                                                                 |-> extracted folder ===> use SpringToolSuite4.exe to launch IDE
+                                                                 
+ Step-3 : create project in eclipse or sts ide and add lombok jar file to the build path.
+            
+ Step-4 : Launch lombok app by clicking on lombok-<ver>.jar file and select Eclipse or STS IDE
+             installable folder..=> click on install/Update button ==> Quit Installer..
+             
+ Step-5 : Restart Eclipse/STS IDE...
+ 
+ Step-6 : Add one java bean class to project of eclispe/STS ide by  lombok api annotation.. and observe
+ 			 wheather code is generated or not. 

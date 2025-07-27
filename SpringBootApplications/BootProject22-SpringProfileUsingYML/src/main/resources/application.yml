@@ -1,0 +1,5 @@
+spring:
+    application:
+        name: BootProject21-LayerApplication
+    profiles:
+        active: uat

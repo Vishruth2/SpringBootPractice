@@ -1,0 +1,31 @@
+org:
+  nit:
+    #for simple properties
+    eno: 1001
+    ename: Vishari
+    #for array properties
+    fav-colors:
+      - red
+      - blue
+      - green
+    #for List collection
+    nick-names:
+      - chinna
+      - munna
+      - kanna
+   #for set collection
+    phone-numbers:
+      - 9346090580
+      - 9949215450
+      - 6305154963
+    #for map collection
+    id-details:
+      aadhaar: 898989128893
+      voter: 852963B14
+      panNo: BZOPV4752N	    
+    #for HAS-A property
+    company:
+      id: 89012
+      name: HCL
+      address: Hyderabad
+      size: 300
