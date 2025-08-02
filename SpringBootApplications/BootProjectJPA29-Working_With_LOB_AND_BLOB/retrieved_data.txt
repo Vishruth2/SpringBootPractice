@@ -1,0 +1,10 @@
+Name: Priyanka Mohan
+Date of Birth: 20th November 1994
+Gender: Female
+Nationality: Indian
+Address: 221B Baker Street, Mumbai, Maharashtra, India
+Phone: +91-9876543210
+Email: priyanka.mohan@email.com
+Education: B.E. in Computer Science
+Skills: Java, Python, HTML, Communication
+Hobbies: Reading, Music, Travel

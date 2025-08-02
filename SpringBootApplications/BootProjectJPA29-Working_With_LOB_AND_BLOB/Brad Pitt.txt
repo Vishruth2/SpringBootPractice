@@ -1,0 +1,10 @@
+Name: Brad Pitt  
+Date of Birth: 18th December 1963  
+Gender: Male  
+Nationality: American  
+Address: 100 Hollywood Blvd, Los Angeles, California, USA  
+Phone: +1-310-123-4567  
+Email: brad.pitt@email.com  
+Education: B.A. in Journalism, University of Missouri  
+Skills: Acting, Producing, Public Speaking  
+Hobbies: Sculpting, Architecture, Motorcycling
